@@ -1,8 +1,20 @@
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
+# virtual env
+venv/
+.venv/
 
-# OS / editor files
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# jupyter
+.ipynb_checkpoints/
+
+# env
+.env
+
+# OS
 .DS_Store
-*.swp
+Thumbs.db
