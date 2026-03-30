@@ -71,7 +71,7 @@ ppo_learning/
 
 ## Configuration
 
-Configuration holds a baseline configuration of which the parameters that vary are listed below except buffer size.
+config.py holds the baseline configuration, of which the parameters that vary are listed below.
 
 - `BUFFER_SIZE = 4096` - Amount of data stored before updating agent.
 - `BASELINE['lr'] = 3e-4` - Baseline learning rate of actor and critic networks.
