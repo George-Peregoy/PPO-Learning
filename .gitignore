@@ -12,9 +12,19 @@ build/
 # jupyter
 .ipynb_checkpoints/
 
+# training artifacts
+runs/
+checkpoints/
+*.pt
+*.pth
+
 # env
 .env
+.git
 
 # OS
 .DS_Store
 Thumbs.db
+
+# vscode
+.vscode

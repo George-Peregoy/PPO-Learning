@@ -1,0 +1,7 @@
+gymnasium[mujoco]==1.2.3
+numpy==2.2.6
+torch==2.11.0
+matplotlib==3.10.8
+ipykernel==7.2.0
+moviepy==2.2.1
+imageio-ffmpeg==0.6.0
