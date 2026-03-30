@@ -52,13 +52,14 @@ def train(num_episodes, run_id, buffer_size, cfg):
         agent.update()
 
         if episode_rewards:
-            avg_reward = np.mean(episode_rewards)
-            if avg_reward >= best_reward:
+            curr_reward = np.mean(episode_reward_log[-5:])
+            if curr_reward >= best_reward:
+                print("WORKS")
                 agent.save(save_dir)
-                best_reward = avg_reward
+                best_reward = curr_reward
 
             if i % log_every == 0:
-                print(f"Episode: {i} | avg reward: {avg_reward:.2f}")
+                print(f"Episode: {i} | avg reward: {np.mean(episode_rewards):.2f}")
                 episode_rewards = []
 
     env.close()
