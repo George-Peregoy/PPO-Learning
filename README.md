@@ -1,6 +1,6 @@
 # PPO-Learning on Cheetah-v5
 
-Trains an agent using PPO, sweeps parameters to tune model.
+Impements PPO [Schulman et al., 2017](https://arxiv.org/pdf/1707.06347) to train a continuous-control agent on HalfCheetah-v5. Includes a hyperparameter sweep across learning rate, network layer sizes, and update epochs, with a data analysis notebook for evaluating results.
 
 ## Requirements
 
@@ -58,7 +58,7 @@ ppo_learning/
 └── README.md
 ```
 
-### Ptyhon Files
+### Python Files
 
 - `agent.py` - Defines RL agent.
 - `network.py` - General NN class made in pytorch.
@@ -76,7 +76,7 @@ config.py holds the baseline configuration, of which the parameters that vary ar
 - `BUFFER_SIZE = 4096` - Amount of data stored before updating agent.
 - `BASELINE['lr'] = 3e-4` - Baseline learning rate of actor and critic networks.
 - `BASELINE['actor_layer_sizes'] = [STATE_DIM, 256, 256, ACTION_DIM]` - Sizes of actor network layers.
-- `BASELINE['critic_layer_sizes'] = [STATE_DIM, 256, 256, ACTION_1]` - Sizes of critic network layers.
+- `BASELINE['critic_layer_sizes'] = [STATE_DIM, 256, 256, 1]` - Sizes of critic network layers.
 - `BASELINE['k_epochs'] = 10` - Number of times agent is trained on same data.
 
 ## Usage
