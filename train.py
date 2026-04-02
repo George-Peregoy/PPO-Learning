@@ -54,7 +54,6 @@ def train(num_episodes, run_id, buffer_size, cfg):
         if episode_rewards:
             curr_reward = np.mean(episode_reward_log[-5:])
             if curr_reward >= best_reward:
-                print("WORKS")
                 agent.save(save_dir)
                 best_reward = curr_reward
 
