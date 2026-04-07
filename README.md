@@ -17,7 +17,7 @@ cd PPO-Learning
 
 **SSH:**
 ```bash
-git clone git@github.com:George-Peregoy/PPO_Learning.git
+git clone git@github.com:George-Peregoy/PPO-Learning.git
 cd PPO-Learning
 ```
 
